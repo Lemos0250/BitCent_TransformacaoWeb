@@ -1,16 +1,12 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
+import Financas from '@/components/financas'
 import Landing from '@/components/landing'
-import Pagina from '@/components/template/Pagina'
-
-
-const inter = Inter({ subsets: ['latin'] })
+import Carregando from '@/components/template/Carregando'
+import AutenticacaoContext from '@/data/contexts/AutenticacaoContext'
+import { useContext } from 'react'
 
 export default function Home() {
-  return (
-    <Pagina>
-      <Landing/>
-    </Pagina>
-  )
+    const { usuario, carregando } = useContext(AutenticacaoContext)
+
+    if(carregando) return <Carregando />
+    return usuario ? <Financas /> : <Landing />
 }

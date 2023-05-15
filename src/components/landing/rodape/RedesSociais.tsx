@@ -1,20 +1,13 @@
-import React from "react"
-import Link from "next/link"
-interface RedeSocialProps {
-    icone: any
-    url: string
-}
+import { IconBrandFacebook, IconBrandGithub, IconBrandInstagram, IconBrandYoutube } from "@tabler/icons-react"
+import RedeSocial from "./RedeSocial"
 
-export default function RedeSocial(props: RedeSocialProps) {
+export default function RedesSociais() {
     return (
-        <Link href={props.url} target="_blank">
-            <div className="bg-zinc-800 rounded-lg p-1 mr-3 cursor-pointer">
-                {React.cloneElement(props.icone, {
-                    size: 35,
-                    strokeWidth: 1,
-                    className: "text-indigo-500",
-                })}
-            </div>
-        </Link>
+        <div className="flex">
+            <RedeSocial icone={<IconBrandYoutube />} url="https://www.youtube.com/@cod3r" />
+            <RedeSocial icone={<IconBrandInstagram />} url="https://www.instagram.com/cod3rcursos" />
+            <RedeSocial icone={<IconBrandFacebook />} url="https://www.facebook.com/cod3rcursos/" />
+            <RedeSocial icone={<IconBrandGithub />} url="https://github.com/cod3rcursos" />
+        </div>
     )
 }

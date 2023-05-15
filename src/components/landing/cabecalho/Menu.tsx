@@ -1,15 +1,15 @@
+import AutenticacaoContext from "@/data/contexts/AutenticacaoContext"
 import { IconBrandGoogle } from "@tabler/icons-react"
 import { useContext } from "react"
-import MenuItem from "./Menuitem"
+import Menuitem from "./Menuitem"
 
 export default function Menu() {
-    function loginGoogle() {
-        alert("Login com Google")
-    }
+
+    const { loginGoogle } = useContext(AutenticacaoContext)
 
     return (
         <div>
-            <MenuItem
+            <Menuitem
                 onClick={loginGoogle}
                 className="bg-gradient-to-r from-indigo-600 to-cyan-600"
             >
@@ -17,7 +17,7 @@ export default function Menu() {
                     <IconBrandGoogle size={15} />
                     <span>Login</span>
                 </div>
-            </MenuItem>
+            </Menuitem>
         </div>
     )
 }
