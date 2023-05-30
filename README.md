@@ -13,4 +13,4 @@ The following tools were necessary for the development of this program:
 
 -  <img align="center" alt="NODE" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain.svg"> **Firebase**: Firebase is a set of back-end cloud computing services and application development platforms provided by Google. It hosts databases, services, authentication and integration for a variety of applications including Android, iOS, JavaScript, Node.js, Java, Unity, PHP and C++.
 
--  <img align="center" alt="NODE" height="30" width="30" src="https://seeklogo.com/images/M/mantine-logo-235E19C978-seeklogo.com.png"> **Mantine**: A fully featured React Components Library.
+-  <img align="center" alt="NODE" height="30" width="30" src="https://seeklogo.com/images/M/mantine-logo-235E19C978-seeklogo.com.png"> **Mantine**:   A fully featured React Components Library.
